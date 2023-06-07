@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'dart:io';
-import 'package:flutter_exit_app/flutter_exit_app.dart';
-
-import 'package:flutter/services.dart';
 
 const mycolor = Color(0xff13282b);
 const mycolor1 = Color(0xff055256);
@@ -160,9 +156,7 @@ class HomeScreen extends StatelessWidget {
               } else if (value == 1) {
                 Navigator.of(context)
                     .push(MaterialPageRoute(builder: (context) => About()));
-              } else if (value == 2) {
-                FlutterExitApp.exitApp(iosForceExit: true);
-              }
+              } else if (value == 2) {}
             },
           ),
         ],
@@ -267,9 +261,7 @@ class SecondPage extends StatelessWidget {
               } else if (value == 1) {
                 Navigator.of(context)
                     .push(MaterialPageRoute(builder: (context) => About()));
-              } else if (value == 2) {
-                FlutterExitApp.exitApp(iosForceExit: true);
-              }
+              } else if (value == 2) {}
             },
           ),
         ],
@@ -376,7 +368,7 @@ class About extends StatelessWidget {
                 height: 20,
               ),
               Text(
-                "Masoud Qaderi & Tariq",
+                "Masoud Qaderi & Tariq Ismaili",
                 style: TextStyle(
                   fontFamily: 'comfortaa',
                   color: mycolor,
@@ -403,7 +395,7 @@ class About extends StatelessWidget {
                   child: Padding(
                     padding: EdgeInsets.all(16.0),
                     child: Text(
-                      "Meet Masud Qaderi and Tarig - two talented students from Herat University and Wassa Organization who have recently created their first app, called Top 10 University in the World.This free app gives users access to valuable information about the top 10 universities in the world for informatics. With just a few taps, users can browse through the rankings, read detailed descriptions of each university, and learn about their cutting-edge research and programs.The app was developed over the course of three days, during which time Masud and Tarig faced a number of challenges. However, they persevered and were able to produce a high-quality product that showcases their impressive programming skills.Overall, \'Top 10 University in the World\' is an excellent resource for anyone interested in pursuing a career in informatics or simply looking to expand their knowledge of the field. Congratulations to Masud and Tarig on this impressive achievement!",
+                      "Meet Masoud Qaderi and Tariq Ismaili - two talented students from Herat University and Wassa Organization who have recently created their first app, called \'Top 10 University in the\' World.This free app gives users access to valuable information about the top 10 universities in the world for informatics. With just a few taps, users can browse through the rankings, read detailed descriptions of each university, and learn about their cutting-edge research and programs.The app was developed over the course of three days, during which time Masoud and Tariq faced a number of challenges. However, they persevered and were able to produce a high-quality product that showcases their impressive programming skills.Overall, \'Top 10 University in the World\' is an excellent resource for anyone interested in pursuing a career in informatics or simply looking to expand their knowledge of the field. Congratulations to Masoud and Tariq on this impressive achievement!",
                       style: TextStyle(
                         fontSize: 14.0,
                         fontFamily: 'comfortaa',
